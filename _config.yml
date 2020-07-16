@@ -2,6 +2,3 @@ domain: danielverdugo.com
 url: https://danielverdugo.com
 
 encoding: "utf-8"
-
-plugins:
-  - jekyll-sitemap
