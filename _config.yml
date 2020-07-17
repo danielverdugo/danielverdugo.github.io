@@ -14,6 +14,8 @@ defaults:
       layout: "default"
       permalink: /:path/:basename/
       lang: "en"
-      nobr: false
+
+feed:
+  path: /rss/
 
 safe: false
