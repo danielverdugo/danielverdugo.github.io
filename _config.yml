@@ -7,6 +7,10 @@ compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
 
+sass:
+  style: :compressed
+  sass_dir: _includes
+
 defaults:
   - scope:
       path: ""
