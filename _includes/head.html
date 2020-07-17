@@ -18,5 +18,10 @@
     {% endif %}
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        {% capture core-css %}{% include core.sass %}{% endcapture %}
+        {{ core-css | sassify }}
+    </style>
 </head>
 <body>
