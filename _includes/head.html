@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+	<meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+    
+    {% if page.permalink != "/404.html" %}
+	<link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
+	{% endif %}
+
+	{% if page.desc %}
+	<meta name="description" content="{{ page.desc }}">
+	{% endif %}
+
+	{% if page.og-image %}
+	<meta property="og:image" content="{{ page.og-image }}">
+    {% endif %}
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
