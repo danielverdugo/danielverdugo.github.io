@@ -21,9 +21,8 @@
 
     <link rel="icon" type="image/png" sizes="144x144" href="/android-chrome.png">
 
-    <style type="text/css">
-        {% capture core-css %}{% include core.sass %}{% endcapture %}
-        {{ core-css | sassify }}
-    </style>
+    <noscript>
+        <link rel="stylesheet" href="/main.css?{{ site.time | date: '%d%m%y%H%M%S' }}">
+    </noscript>
 </head>
 <body>

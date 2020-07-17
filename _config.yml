@@ -5,21 +5,18 @@ encoding: "utf-8"
 
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments: all
 
 sass:
-  style: :compressed
-  sass_dir: _includes
+  sass_dir: _sass
+  style: compressed
 
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-      permalink: /:path/:basename/
       lang: "en"
 
 feed:
   path: /rss/
-
-safe: false
