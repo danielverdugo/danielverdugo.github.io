@@ -1,8 +1,11 @@
+</main>
 <script>
     var append=function(a,t,e,n,d){var r=document.createElement(t);e&&r.setAttribute(e[0],e[1]),n&&r.setAttribute(n[0],n[1]),d&&r.setAttribute(d[0],d[1]),document.getElementsByTagName(a)[0].appendChild(r)};
-    window.onload = function(){
+    document.addEventListener("DOMContentLoaded",function(){
         append("head","link",["rel","stylesheet"],["href","/main.css?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
-        append("body","script",["src","/js/stat.js"]);
+    });
+    window.onload = function(){
+        append("body","script",["src","/js/stat.js?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
     };
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/65690530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

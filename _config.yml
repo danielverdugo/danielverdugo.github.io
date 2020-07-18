@@ -19,4 +19,4 @@ defaults:
       lang: "en"
 
 feed:
-  path: /rss/
+  path: /rss/index.xml
