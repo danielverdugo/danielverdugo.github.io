@@ -86,16 +86,16 @@
 .pull-right   { float: right; }
 
 /* Responsive Stuff */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 600px) {
   /* Stack anything that isn’t full-width on smaller screens */
   .grid .unit {
     width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
   }
   .unit .grid .unit {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* Sometimes, you just want to be different on small screens */
@@ -108,9 +108,9 @@
 }
 
 /* Expand the wrap a bit further on larger screens */
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: $max-width) {
   .wider .grid {
-    max-width: 1180px;
+    max-width: $max-width;
     margin: 0 auto;
   }
 }
