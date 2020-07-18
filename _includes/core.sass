@@ -12,6 +12,13 @@ main, div
     line-height: 143%
     color: $black
 
+h4
+    margin-bottom: 0
+
+p
+    margin-top: 0
+    margin-bottom: 0.3em
+
 a
     color: $link
     text-decoration: none
@@ -22,6 +29,12 @@ a:hover
     color: $hover
     border-bottom: 1px solid rgba($hover, 0.3)
     transition: all .3s ease-out
+
+a.imglink
+    border-bottom: 0
+
+a.span
+    border-bottom: 0
 
 img.inline
     display: inline
@@ -88,5 +101,22 @@ a.email
         &::before
             background: linear-gradient(180deg, #7D3C00 0%, #D06969 100%)
             opacity: 1    
+
+span.file
+    font-variant: small-caps
+    color: $dark-grey
+    font-variant-numeric: oldstyle-nums
+    margin-left: 0.22em
+    border-bottom: 0
+    cursor: pointer
+
+
+.hireme
+    width: 16em
+    background-color: $white
+    padding-top: 0.2em
+    padding-left: 1.25em
+    padding-bottom: 1.25em
+    border-radius: 1em;
 
 @import gridism

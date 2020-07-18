@@ -7,6 +7,14 @@
     window.onload = function(){
         append("body","script",["src","/js/stat.js?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
     };
+    function hover(id) {
+        var element = document.getElementById(id);
+        element.classList.add("hover");
+    }
+    function remhover(id) {
+        var element = document.getElementById(id);
+        element.classList.remove("hover");
+    }
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/65690530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
