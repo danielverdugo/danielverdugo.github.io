@@ -7,3 +7,4 @@ User-agent: *
 Disallow:
 Allow: /
 Host: {{ site.domain }}
+Sitemap: https://{{ site.domain }}/sitemap.xml

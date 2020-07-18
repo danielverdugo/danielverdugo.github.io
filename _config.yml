@@ -20,3 +20,7 @@ defaults:
 
 feed:
   path: /rss/index.xml
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
