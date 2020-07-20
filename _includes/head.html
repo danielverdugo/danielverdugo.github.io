@@ -21,17 +21,14 @@
 
     <link rel="icon" type="image/png" sizes="144x144" href="/android-chrome.png">
 
-    <style type="text/css">
-        {% capture core-css %}{% include core.sass %}{% endcapture %}
-        {{ core-css | sassify }}
-    </style>
+    <link rel="stylesheet" href="/main.css?{{ site.time | date: '%d%m%y%H%M%S' }}">
 
     <noscript>
-        <link rel="stylesheet" href="/main.css?{{ site.time | date: '%d%m%y%H%M%S' }}">
+        <link rel="stylesheet" href="/assets/fonts.css?{{ site.time | date: '%d%m%y%H%M%S' }}">
     </noscript>
 </head>
 <body>
 {% if page.permalink != "/404.html" %}
-<!--div class="emailbox aligncenter-mob"><a href="mailto:hello&#64;danielverdugo.com" class="email">Contact&nbsp;me</a></div-->
+<div class="emailbox aligncenter-mob"><a href="mailto:hello&#64;danielverdugo.com" class="email">Contact&nbsp;me</a></div>
 {% endif %}
 <main class="wrap">

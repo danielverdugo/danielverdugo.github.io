@@ -1,20 +1,29 @@
+{% if page.permalink != "/404.html" %}
+<!--section>
+    <div class="grid">
+        <div class="unit whole">&copy;&nbsp;Daniel Verdugo Nosov, 2014&ndash;{{ site.time | date: '%Y' }}</div>
+    </div>
+</section-->
+{% endif %}
 </main>
 <script>
     var append=function(a,t,e,n,d){var r=document.createElement(t);e&&r.setAttribute(e[0],e[1]),n&&r.setAttribute(n[0],n[1]),d&&r.setAttribute(d[0],d[1]),document.getElementsByTagName(a)[0].appendChild(r)};
     document.addEventListener("DOMContentLoaded",function(){
-        append("head","link",["rel","stylesheet"],["href","/main.css?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
+        append("head","link",["rel","stylesheet"],["href","/assets/fonts.css?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
     });
     window.onload = function(){
-        append("body","script",["src","/js/stat.js?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
+        append("body","script",["src","/assets/js/stat.js?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
+        append("body","script",["src","/assets/likely/likely.js"]);
+        append("head","link",["rel","stylesheet"],["href","/assets/likely/likely.css"]);
     };
     function hover(id) {
         var element = document.getElementById(id);
         element.classList.add("hover");
-    }
+    };
     function remhover(id) {
         var element = document.getElementById(id);
         element.classList.remove("hover");
-    }
+    };
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/65690530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
