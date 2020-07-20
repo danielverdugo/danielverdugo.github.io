@@ -10,10 +10,10 @@
     var append=function(a,t,e,n,d){var r=document.createElement(t);e&&r.setAttribute(e[0],e[1]),n&&r.setAttribute(n[0],n[1]),d&&r.setAttribute(d[0],d[1]),document.getElementsByTagName(a)[0].appendChild(r)};
     document.addEventListener("DOMContentLoaded",function(){
         append("head","link",["rel","stylesheet"],["href","/assets/fonts.css?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
+        append("body","script",["src","/assets/likely/likely.js"]);
     });
     window.onload = function(){
         append("body","script",["src","/assets/js/stat.js?{{ site.time | date: '%d%m%y%H%M%S' }}"]);
-        append("body","script",["src","/assets/likely/likely.js"]);
         append("head","link",["rel","stylesheet"],["href","/assets/likely/likely.css"]);
     };
     function hover(id) {
