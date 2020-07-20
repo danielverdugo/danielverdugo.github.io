@@ -88,7 +88,7 @@
 .pull-right   { float: right; }
 
 /* Responsive Stuff */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $max-width) {
   /* Stack anything that isn’t full-width on smaller screens */
   .grid .unit {
     width: 100% !important;
