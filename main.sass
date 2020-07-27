@@ -4,12 +4,12 @@
 @import settings
 
 body
-    background-color: $white
+    background-color: $black
     margin: 0
     padding-top: 2em
     font: $font
     line-height: 140%
-    color: $black
+    color: $white
 
 @import gridism
 
@@ -23,13 +23,12 @@ p, h2
 a
     color: $link
     text-decoration: none
-    border-bottom: 1px solid rgba($link, 0.3)
-    transition: all .3s ease-out
 
 a:hover, a.hover
-    color: $hover
-    border-bottom: 1px solid rgba($hover, 0.3)
-    transition: all .3s ease-out
+    text-decoration: underline
+
+a svg
+  fill: $link
 
 h1,h2,h3,h4
     font-weight: 900
@@ -64,13 +63,14 @@ nobr
     height: 5em
     background: url(/assets/i/photo-top.jpg) center
     background-size: cover
-    margin-bottom: 1.25em
+    margin-bottom: 0
 
 .highlight
-    font-size: 1.68em
-    line-height: 150%
+    font-size: 2em
+    line-height: 130%
     margin-top: 0
     margin-bottom: 0.74em
+    font-weight: 500
 
 .emailbox
     position: fixed
@@ -127,6 +127,7 @@ span.file
     color: $dark-grey
     margin-left: 0.5em
     border-bottom: 0
+    font-variant: small-caps
 
 .hireme
     width: 100% !important
@@ -135,11 +136,13 @@ span.file
     padding-right: 1.25em
     padding-bottom: 2em
     border-radius: 1em
-    border: 2px dashed $light-grey
+    background-color: $white
+    color: $black
 
-.likely__icon
-    filter: grayscale(100%)
+.social_links
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
 
-@import dark
+
 
 @import mobile

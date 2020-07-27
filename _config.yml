@@ -18,6 +18,8 @@ defaults:
       layout: "default"
       lang: "en"
 
+typekit: "https://use.typekit.net/fll4wpb.css"
+
 feed:
   path: /rss/index.xml
 
