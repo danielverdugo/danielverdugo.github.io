@@ -23,8 +23,8 @@
 .grid .unit {
   float: left;
   width: 100%;
-  padding: 0.625em;
-  margin-bottom: 0.625em;
+  padding-left: 0.7em;
+  padding-right: 0.7em
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
@@ -52,7 +52,7 @@
 }
 
 .wrap .full {
-  max-width: 100vw !important
+  max-width: $wider-width !important
 }
 
 /* Width classes also have shorthand versions numbered as fractions
