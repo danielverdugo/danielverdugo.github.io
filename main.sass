@@ -80,15 +80,22 @@ a .highlight
   color: $link
 
 .topbar
-    position: fixed
-    left: 0
-    right: 0
     padding-right: 2.5em
     top: 0
-    max-width: $wider-width
     margin: 0 auto
     text-align: right
     z-index: 100
+
+.bottombar
+  bottom: 0
+  display: none
+  justify-content: center
+
+.fixed
+  position: fixed
+  left: 0
+  right: 0
+  max-width: $wider-width
 
 .contact_link
   font-size: 1.2em
@@ -96,14 +103,20 @@ a .highlight
   display: inline-block
   background: yellow
   color: $black
-  border-bottom-left-radius: 8px
-  border-bottom-right-radius: 8px
   padding-left: 0.8em
   padding-right: 0.8em
   padding-top: 0.4em
   padding-bottom: 0.5em
   box-shadow: 0px 3px 10px 5px rgba($black, 0.06)
   transition: 0.3s ease-out
+
+.topbar .contact_link
+  border-bottom-left-radius: 6px
+  border-bottom-left-radius: 6px
+
+.bottombar .contact_link
+  border-top-left-radius: 6px
+  border-top-right-radius: 6px
 
 .contact_link svg
   stroke: $black
@@ -119,7 +132,7 @@ section
 footer
   margin-top: 5em
 
-.profile_links
+.social_links
   display: grid
   grid-template-columns: repeat(6, 1fr)
 

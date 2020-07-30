@@ -16,5 +16,10 @@
     .centered_story {
       max-width: 100%
     }
-
+    .topbar {
+      display: none
+    }
+    .bottombar {
+      display: flex
+    }
 }
