@@ -22,4 +22,11 @@
     .bottombar {
       display: flex
     }
+    .browser_bar {
+      height: 20px
+    }
+    .browser_bar .browser_bar_url {
+      height: 12px;
+      font-size: 0.4em
+    }
 }
