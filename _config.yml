@@ -17,6 +17,7 @@ defaults:
     values:
       layout: "default"
       lang: "en"
+      email: "daniel&#64;verdugo.ru"
 
 typekit: "https://use.typekit.net/fll4wpb.css"
 
