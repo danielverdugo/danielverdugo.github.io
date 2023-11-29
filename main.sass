@@ -1,207 +1,47 @@
 ---
 ---
 
-@import settings
+$font: Interr, sans-serif
+
+@import colors
+@import font
+
+$black: #{var(--neutral-950)}
+$white: #{var(--neutral-50)}
 
 body
   background-color: $black
   margin: 0
-  padding-top: 2em
-  font: $font
-  line-height: 155%
+  padding-top: 2.5em
+  padding-left: 1.34em
+  padding-right: 1.34em
+  font-family: $font
+  font-size: 20px
+  font-weight: 300
+  line-height: 135%
   color: $white
 
-@import gridism
-
-
-p
-  margin-top: 0
-  margin-bottom: 0.7em
-  font-weight: 400
-  color: $p-color
-
-a
-  color: $link
-  text-decoration: none
-
-a:hover, a.hover
-  text-decoration: underline
-
-a svg
-  fill: $link
-  stroke: $link
-
-h1,h2,h3,h4
-  font-weight: 800
-  margin-top: 0
-  margin-bottom: 0.25em
-  opacity: 1
-
-h3
-  font-size: 1.2em
-
-.date
-  font-style: italic
-  display: inline-block
-  padding-top: 0.3125em
-  padding-right: 0.1em
-  opacity: 0.6
-
-a.imglink
-  border-bottom: 0
-
-a.span
-  border-bottom: 0
-
-img.inline
-  display: inline
-  margin-right: 0.25em
-
-nobr, .nobr
-  white-space: nowrap
-
-.photo-top
-  border-radius: 50%
-  width: 5em
-  height: 5em
-  background: url(/assets/i/photo-top.jpg) center
-  background-size: cover
-  margin-bottom: 0
-
-.highlight
-  font-size: 2em
-  line-height: 130%
-  margin-top: 0
-  margin-bottom: 0.74em
+h1
+  font-size: 20pt
   font-weight: 500
-  color: $white
 
-a .highlight
-  color: $link
+img.userpic
+  float:left
+  width: 4em
+  height: 4em
+  border-radius: 100%
 
-.topbar
-  padding-right: 2.5em
-  top: 0
-  margin: 0 auto
-  text-align: right
-  z-index: 100
-
-.bottombar
-  bottom: 0
-  display: none
-  justify-content: center
-
-.fixed
-  position: fixed
-  left: 0
-  right: 0
-  max-width: $wider-width
-
-.contact_link
-  font-size: 1.2em
-  font-weight: 600
-  display: inline-block
-  background: yellow
-  color: $black !important
-  padding-left: 0.8em
-  padding-right: 0.8em
-  padding-top: 0.4em
-  padding-bottom: 0.4em
-  box-shadow: 0px 3px 10px 5px rgba($black, 0.06)
-  transition: 0.3s ease-out
-
-.topbar .contact_link
-  border-bottom-left-radius: 6px
-  border-bottom-right-radius: 6px
-
-.bottombar .contact_link
-  border-top-left-radius: 6px
-  border-top-right-radius: 6px
-
-.contact_link svg
-  stroke: $black
-  transition: 0.3s ease-out
-
-.contact_link:hover
-  text-decoration: none
-  transition: 0.3s ease-out
-
-section
-    margin-bottom: 6.2em
-
-footer
-  margin-top: 5em
-
-.profile_links
-  display: grid
-  grid-template-columns: repeat(6, 1fr)
-
-.link_icon, .link_icon_top
-  display: inline-block
-  padding-right: 24px
-  margin-right: 0.3em
-  position: relative
-  color: $black
-
-.link_icon_top
-  margin-right: 0.4em !important
-
-.link_icon svg
-  position: absolute
-  top: -19px
-
-.link_icon_top svg
-  position: absolute
-  top: -22px
-
-.browser_bar, .browser_bar_small
+.container
+  max-width: 66%
+  margin: auto auto
   display: flex
-  height: 30px
-  align-items: center
-  justify-content: center
-  background-color: #222
-  border-top-left-radius: 4px
-  border-top-right-radius: 4px
+  flex-flow: row wrap
+  row-gap: 1.43em
+  column-gap: 1.43em
 
-.browser_bar_small
-  height: 20px !important
+.whole
+  flex-grow: 2
 
-.browser_bar_url
-  display: flex
-  width: 70%
-  align-items: center
-  justify-content: center
-  background: rgba($white, 0.1)
-  border-radius: 2px
-  color: rgba($white, 0.7)
-  height: 20px
-  font-size: 0.6em
-
-.browser_bar_small .browser_bar_url
-  height: 12px
-  font-size: 0.4em
-
-.browser_content img
-  display: block
-  width: 100%
-
-hr
-  border: 1px solid rgba($white,0.1)
-
-.hr-16
-  height: 10px
-
-.centered_story
-  max-width: 75%
-  margin: 0 auto
-
-.separator
-  margin-bottom: 3em
-
-.separator_int
-  margin-bottom: 2em
-
-.wrap
-  padding-top: 3em
-
-@import mobile
+.half
+  min-width: 20em
+  flex-grow: 1

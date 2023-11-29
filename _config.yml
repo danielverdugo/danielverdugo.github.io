@@ -17,13 +17,5 @@ defaults:
     values:
       layout: "default"
       lang: "en"
-      email: "daniel&#64;danielverdugo.com"
+      email: "daniel&#64;verdugo.ar"
 
-typekit: "https://use.typekit.net/fll4wpb.css"
-
-feed:
-  path: /rss/index.xml
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
