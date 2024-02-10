@@ -8,40 +8,114 @@ $font: Interr, sans-serif
 
 $black: #{var(--neutral-950)}
 $white: #{var(--neutral-50)}
+$indigo-900: #{var(--indigo-900)}
+$indigo-600: #{var(--indigo-600)}
+$indigo-400: #{var(--indigo-400)}
+
 
 body
   background-color: $black
   margin: 0
-  padding-top: 2.5em
-  padding-left: 1.34em
-  padding-right: 1.34em
+  padding: 0
   font-family: $font
-  font-size: 20px
-  font-weight: 300
-  line-height: 135%
+  font-size: 18px
+  font-weight: 200
+  line-height: 150%
+  text-rendering: optimizeLegibility
   color: $white
 
 h1
   font-size: 20pt
-  font-weight: 500
+  font-weight: 800
+  margin-bottom: 12pt
+  margin-top: 0
 
-img.userpic
-  float:left
-  width: 4em
-  height: 4em
+p
+  margin-top: 0
+
+a
+  color: $indigo-600
+  text-decoration: none
+  border-bottom: 1px solid $indigo-900
+  padding-bottom: 2px
+
+a:hover
+  border: 0
+  background-color: $indigo-900
+  cursor: pointer
+
+a.email b
+  display: none
+
+a.cta_button
+  display: inline-block
+  background-color: oklch(30.08% 0 0)
+  color: $white
+  font-weight: 500
+  border: 0
+  border-radius: 4px
+  padding: 0.54em 0.45em 0.54em 0.45em
+  font-size: 120%
+  transition: .2s ease-in
+  text-align: center
+
+a.cta_button:hover
+  background-color: oklch(41.21% 0 0)
+  
+a.imglink
+  text-decoration: none
+  border: 0
+  padding-bottom: 0
+
+a.imglink:hover
+  background-color: none
+
+.userpic
+  display: inline-block
+  width: 3.6em
+  height: 3.6em
   border-radius: 100%
+  background-image: url("/assets/i/userpic.jpg")
+  background-size: cover
+  margin-bottom: 1.45em
+  border: 0
 
 .container
-  max-width: 66%
+  width: 95%
+  max-width: 1400px
   margin: auto auto
-  display: flex
-  flex-flow: row wrap
-  row-gap: 1.43em
-  column-gap: 1.43em
+  padding-top: 2.45em
+  display: grid
+  grid-template-columns: 16em minmax(0, auto) 16em
+  grid-template-rows: 1fr
+  grid-column-gap: 1.8em
 
-.whole
-  flex-grow: 2
+.menu
+  grid-column: 2
 
-.half
-  min-width: 20em
-  flex-grow: 1
+.content
+  grid-column: 2
+  word-wrap: break-word
+
+.container > aside
+  grid-column: 3
+
+@media (max-width: 1200px)
+  .container
+    max-width: 90%
+    min-width: 0
+    grid-template-columns: 0 100%
+    grid-column-gap: 0
+
+@media (min-width: 1200px)
+  .container > aside
+    position: sticky
+    top: 2.5em
+    align-self: start
+
+.menu
+  position: fixed
+  padding-top: 2.45em
+  width: 16em
+  height: 100vh
+  top: 0

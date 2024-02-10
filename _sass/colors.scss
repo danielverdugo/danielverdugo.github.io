@@ -10,7 +10,12 @@
     --neutral-800: #4b4b4b;
     --neutral-900: #2e2e2e;
     --neutral-950: #141414;
-  }
+
+    --indigo-200: #D0E7FF;
+    --indigo-400: #82BDFF;
+    --indigo-600: #4185DB;
+    --indigo-900: #112F51;
+}
   
   @supports (color: oklch(0% 0 0)) {
     @media (color-gamut: p3) {
@@ -26,7 +31,12 @@
         --neutral-800: oklch(0.412109 0 0);
         --neutral-900: oklch(0.300781 0 0);
         --neutral-950: oklch(0.193359 0 0);
+
+        --indigo-200: oklch(91.8% 0.04 260);
+        --indigo-400: oklch(78.91% 0.11 260);
+        --indigo-600: oklch(61.33% 0.14 260);
+        --indigo-900: oklch(30.08% 0.07 260);
       }
     }
   }
-  
+
